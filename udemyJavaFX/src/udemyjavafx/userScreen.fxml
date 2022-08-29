@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="userScreen" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-image: url(img/loginScreenBckg.jpg); -fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="udemyjavafx.UserScreenController">
+   <children>
+      <Pane fx:id="reservationsPane" layoutX="191.0" layoutY="53.0" onMouseClicked="#reservationsPaneClicked" onMouseEntered="#mouseHoverReservations" onMouseExited="#mouseExitReservations" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+         <children>
+            <Label layoutX="52.0" layoutY="90.0" text="RESERVATIONS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="availableRoomPane" layoutX="555.0" layoutY="47.0" onMouseClicked="#availableRoomPaneClicked" onMouseEntered="#mouseHoverAvailableRoom" onMouseExited="#mouseExitAvailableRoom" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+         <children>
+            <Label layoutX="43.0" layoutY="90.0" text="AVAILABLE ROOM">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="logoutPane" layoutX="355.0" layoutY="340.0" onMouseClicked="#logoutPaneClicked" onMouseEntered="#mouseHoverLogout" onMouseExited="#mouseExitLogout" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+         <children>
+            <Label layoutX="73.0" layoutY="90.0" text="LOGOUT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="exitPane" layoutX="755.0" layoutY="340.0" onMouseClicked="#exitPaneClicked" onMouseEntered="#mouseHoverExit" onMouseExited="#mouseExitExit" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+         <children>
+            <Label layoutX="87.0" layoutY="90.0" text="EXIT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="customerInfoPane" layoutX="926.0" layoutY="47.0" onMouseClicked="#customersInfoPaneClicked" onMouseEntered="#mouseHoverCustomersInfo" onMouseExited="#mouseExitCustomersInfo" opacity="0.6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+         <children>
+            <Label layoutX="43.0" layoutY="90.0" text="CUSTOMERS INFO">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

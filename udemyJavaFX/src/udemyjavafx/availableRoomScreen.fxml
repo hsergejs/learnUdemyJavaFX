@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="availableRoomScreen" prefHeight="419.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="udemyjavafx.AvailableRoomScreenController">
+   <children>
+      <JFXTreeTableView fx:id="treeTableView" layoutX="237.0" layoutY="8.0" prefHeight="400.0" prefWidth="446.0" style="-fx-background-color: #ffefc2; -fx-border-radius: 10px;" />
+      <Pane layoutX="-1.0" prefHeight="419.0" prefWidth="235.0">
+         <children>
+            <Pane layoutX="8.0" layoutY="10.0" prefHeight="133.0" prefWidth="220.0" style="-fx-background-color: #fcf8ed; -fx-border-radius: 10px; -fx-border-color: grey;">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="91.0" onMouseClicked="#searchByRoomNumberClicked" ripplerFill="WHITE" style="-fx-background-color: #f7e9c1;" text="Search" />
+                  <JFXTextField fx:id="searchOrAvailabilityField" focusColor="#f7e9c1" labelFloat="true" layoutX="19.0" layoutY="42.0" prefHeight="25.0" prefWidth="181.0" promptText="Search by room num or make Availability" unFocusColor="#f7e9c1" />
+                  <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="91.0" onMouseClicked="#makeAvailableClicked" ripplerFill="WHITE" style="-fx-background-color: #f7e9c1;" text="Available" />
+               </children></Pane>
+            <Pane layoutX="8.0" layoutY="143.0" prefHeight="133.0" prefWidth="220.0" style="-fx-background-color: #fcf8ed; -fx-border-radius: 10px; -fx-border-color: grey;">
+               <children>
+                  <JFXCheckBox fx:id="busyCheckBox" layoutX="27.0" layoutY="32.0" onAction="#onActionBusyCheckBox" text="Busy" unCheckedColor="#f7e9c1" />
+                  <JFXCheckBox fx:id="availableCheckBox" layoutX="119.0" layoutY="32.0" onAction="#onActionAvailableCheckBox" text="Available" unCheckedColor="#f7e9c1" />
+                  <JFXButton fx:id="searchButtonBusyAvailableCheckBox" buttonType="RAISED" layoutX="78.0" layoutY="83.0" onMouseClicked="#searchBusyAvailablePressed" ripplerFill="WHITE" style="-fx-background-color: #f7e9c1;" text="Search" />
+               </children></Pane>
+            <Pane layoutX="8.0" layoutY="277.0" prefHeight="133.0" prefWidth="220.0" style="-fx-background-color: #fcf8ed; -fx-border-color: grey; -fx-border-radius: 10px;">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="54.0" onMouseClicked="#backButtonClicked" ripplerFill="WHITE" style="-fx-background-color: #f7e9c1;" text="Back" />
+                  <JFXButton buttonType="RAISED" layoutX="120.0" layoutY="54.0" onMouseClicked="#closeButtonClicked" ripplerFill="WHITE" style="-fx-background-color: #f7e9c1;" text="Close" />
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
